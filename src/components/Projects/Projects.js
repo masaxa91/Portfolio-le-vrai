@@ -9,6 +9,9 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
+
+
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -27,7 +30,7 @@ function Projects() {
               isBlog={false}
               title="Quizz-Cyber"
               description="Le projet Quizz-Cyber a été créé pour aider les utilisateurs à adopter de bonnes habitudes, de bons comportements et de bonnes pratiques en matière de sécurité informatique."
-              demoLink="quizz-cyber-oacm.vercel.app"
+              demoLink="https://quizz-cyber-oacm.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -43,10 +46,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Site Ninho"
+              description="Site"
+              demoLink="https://site-ninho-yw7u.vercel.app/"              
             />
           </Col>
         </Row>
