@@ -21,7 +21,7 @@ function Home2() {
               <br />
               <br />
 
-              et j’aime travailler aussi bien sur le réseau que sur les opérations informatiques générales.
+              J’aime travailler aussi bien sur le réseau que sur les opérations informatiques générales.
               <br />
               <br />
               My key areas of interest include developing
