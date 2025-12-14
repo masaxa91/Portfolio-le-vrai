@@ -21,24 +21,24 @@ function Home2() {
               <br />
               <br />
 
-              J’aime travailler aussi bien sur le réseau que sur les opérations informatiques générales.
+              J’aime travailler aussi bien sur le réseau que sur les opérations informatiques en générales.
               <br />
               <br />
-              My key areas of interest include developing
+             Mes principaux domaines d'intérêt comprennent le développement 
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                 d'applications Web, et le réseau informatique.{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              
+              
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+         
+           
               </i>
             </p>
           </Col>

@@ -4,14 +4,6 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import Techstack from "../About/Techstack";
-import Github from "../About/Github";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
@@ -50,63 +42,44 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
       <Home2 />
 
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
-            <h1>Trouvez moi sur</h1>
+            <h1>Contact</h1>
             <p>
-              Restez <span className="purple">connecter </span>avec moi
+              Restez <span className="purple">connecté</span> avec moi
             </p>
+
             <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/masaxa91"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
+
+              {/* EMAIL */}
               <li className="social-icons">
                 <a
                   href="mailto:atzenhoffermarius@gmail.com"
-                  className="icon-colour home-social-icons"
+                  className="icon-colour home-social-icons contact-item"
                 >
                   <IoIosMail />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="mailto:atzenhoffermarius@gmail.com"
-                  className="icon-colour home-social-icons"
-                >
-                  <BsFillTelephoneFill />
+                  <span className="contact-text">
+                    atzenhoffermarius@gmail.com
+                  </span>
                 </a>
               </li>
 
+              {/* TELEPHONE */}
+              <li className="social-icons">
+                <a
+                  href="tel:+33612345678"
+                  className="icon-colour home-social-icons contact-item"
+                >
+                  <BsFillTelephoneFill />
+                  <span className="contact-text">
+                    +33 7 84 17 04 24
+                  </span>
+                </a>
+              </li>
 
             </ul>
           </Col>
