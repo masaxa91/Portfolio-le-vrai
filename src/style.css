@@ -781,3 +781,33 @@ button:focus {
 .contact-item::before {
   border-radius: 30px !important;
 }
+.progress-bar {
+  background-color: #be50f4 !important; /* Ton violet actuel */
+  border-radius: 4px;
+}
+
+.tech-bar-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(190, 80, 244, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tech-bar-container:hover {
+  transform: scale(1.02);
+  border: 1px solid rgba(190, 80, 244, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+/* Supprime tout filtre qui pourrait être appliqué aux icônes */
+.tech-bar-container svg, 
+.tech-bar-container img {
+  filter: none !important;
+  fill: currentcolor; /* Par défaut, mais on peut forcer */
+}
+
+/* Force les couleurs spécifiques pour les icônes reconnues */
+/* Tu peux trouver les codes couleurs officiels sur SimpleIcons.org */
+.tech-bar-container svg[data-icon="linux"] { color: #FFD133; }
+.tech-bar-container svg[data-icon="windows"] { color: #0078D4; }
+/* ... ajoutes-en pour chaque icône si besoin */

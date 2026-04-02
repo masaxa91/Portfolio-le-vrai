@@ -28,7 +28,7 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                 d'applications Web, et le réseau informatique.{" "}
+                 et le réseau informatique.{" "}
                 </b>
               </i>
               
