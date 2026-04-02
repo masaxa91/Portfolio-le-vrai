@@ -811,3 +811,54 @@ button:focus {
 .tech-bar-container svg[data-icon="linux"] { color: #FFD133; }
 .tech-bar-container svg[data-icon="windows"] { color: #0078D4; }
 /* ... ajoutes-en pour chaque icône si besoin */
+/* Aligner toutes les cartes à la même hauteur dans une rangée */
+.project-card {
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.project-card-view {
+  width: 100% !important;
+  height: 100% !important; /* Force la carte à prendre toute la hauteur de la colonne */
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  transition: all 0.3s ease-out 0s !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+}
+.veille-card .project-card-view {
+  padding: 20px !important;
+  transition: all 0.3s ease 0s !important;
+  height: 100% !important;
+}
+
+.purple {
+  color: #be50f4 !important;
+}
+/* 1. On force l'application à prendre toute la hauteur de l'écran */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Toute la hauteur de la vue */
+  position: relative;
+}
+
+/* 2. On dit au contenu principal de s'étirer pour prendre la place vide */
+/* Cela va "pousser" le footer vers le bas automatiquement */
+.project-section {
+  flex: 1; 
+  padding-top: 150px !important; /* Pour ne pas être caché par la Navbar */
+  padding-bottom: 30px !important;
+}
+
+/* 3. Optionnel : On s'assure que le footer ne bouge plus */
+.footer {
+  background-color: #1b1a2ea9 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
+}

@@ -5,7 +5,7 @@ function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
+        strings: [  
           "Administrateur réseau",
         ],
         autoStart: true,

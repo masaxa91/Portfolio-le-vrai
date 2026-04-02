@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
-import proxmox from "../../Assets/TechIcons/proxmox.svg";
 import wordpress from "../../Assets/TechIcons/wordpress.svg";
 
 function Toolstack() {
@@ -10,7 +9,6 @@ function Toolstack() {
   const tools = [
     { icon: chrome, name: "Google Chrome", level: 5 },
     { icon: vsCode, name: "Vs Code", level: 5 },
-    { icon: proxmox, name: "Proxmox", level: 3 },
     { icon: wordpress, name: "Wordpress", level: 2 },
   ];
 

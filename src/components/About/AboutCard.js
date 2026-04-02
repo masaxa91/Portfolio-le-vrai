@@ -19,7 +19,7 @@ function AboutCard() {
 
             <br />
             <br />
-            En dehors du Dev et du Réseau, J'adore participer à des activités qui me permettent de rester active:
+            En dehors du Dev et du Réseau, j'adore participer à des activités qui me permettent de rester active :
           </p>
 
           <ul>
