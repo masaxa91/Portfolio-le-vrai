@@ -2,10 +2,10 @@ import React from "react";
 import { Col, Row, ProgressBar } from "react-bootstrap";
 // J'ai retiré SiGlpi et ajouté des icônes plus standards (Fa)
 import { 
-  SiCisco, SiWindows, SiDocker, SiLinux, SiProxmox, 
+  SiCisco, SiWindows, SiLinux, SiProxmox, 
   SiMariadb, SiPortainer, SiPython, SiPhp, SiHtml5, SiPostgresql
 } from "react-icons/si";
-import { FaServer, FaShieldAlt, FaNetworkWired } from "react-icons/fa";
+import { FaServer, FaShieldAlt } from "react-icons/fa";
 
 function Techstack() {
   const networkSkills = [
