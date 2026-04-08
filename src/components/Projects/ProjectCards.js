@@ -45,33 +45,35 @@ function ProjectCards(props) {
         </Card.Body>
       </Card>
 
-      {/* FENÊTRE DÉTAILS (MODAL) */}
       <Modal show={show} onHide={handleClose} size="lg" centered contentClassName="project-modal">
         <Modal.Header closeButton style={{ backgroundColor: "#1b1a2ea9", color: "white", borderBottom: "1px solid #be50f4" }}>
           <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ backgroundColor: "#1b1a2ea9", color: "white", padding: "20px" }}>
-          <h4 className="purple">Architecture et Déploiement</h4>
+          <h4 className="purple">Présentation du Projet</h4>
           <p style={{ textAlign: "justify", marginBottom: "25px" }}>{props.detailedExplication}</p>
           
-          <Row style={{ display: "flex", alignItems: "flex-start" }}>
-            <Col md={6} className="text-center" style={{ marginBottom: "20px" }}>
-              <div style={{ width: "100%", height: "250px", overflow: "hidden", borderRadius: "10px", border: "1px solid #be50f4", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "black" }}>
-                <img src={props.imgUnicast} alt="Unicast" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <p style={{ marginTop: "12px", fontSize: "0.95em" }}>
-                <strong>Mode Unicast :</strong><br />Déploiement individuel par poste.
-              </p>
-            </Col>
-
-            <Col md={6} className="text-center" style={{ marginBottom: "20px" }}>
-              <div style={{ width: "100%", height: "250px", overflow: "hidden", borderRadius: "10px", border: "1px solid #be50f4", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "black" }}>
-                <img src={props.imgMulticast} alt="Multicast" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <p style={{ marginTop: "12px", fontSize: "0.95em" }}>
-                <strong>Mode Multicast :</strong><br />Déploiement simultané du parc informatique.
-              </p>
-            </Col>
+          <Row>
+            {props.imgUnicast && (
+              <Col md={props.imgMulticast ? 6 : 12} className="text-center" style={{ marginBottom: "20px" }}>
+                <div style={{ width: "100%", height: "250px", overflow: "hidden", borderRadius: "10px", border: "1px solid #be50f4", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "black" }}>
+                  <img src={props.imgUnicast} alt="Illustration 1" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+                <p style={{ marginTop: "12px", fontSize: "0.95em" }}>
+                  Aperçu de l'infrastructure ou interface de gestion.
+                </p>
+              </Col>
+            )}
+            {props.imgMulticast && (
+              <Col md={6} className="text-center" style={{ marginBottom: "20px" }}>
+                <div style={{ width: "100%", height: "250px", overflow: "hidden", borderRadius: "10px", border: "1px solid #be50f4", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "black" }}>
+                  <img src={props.imgMulticast} alt="Illustration 2" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+                <p style={{ marginTop: "12px", fontSize: "0.95em" }}>
+                  Détail technique ou configuration spécifique.
+                </p>
+              </Col>
+            )}
           </Row>
 
           {props.docLink && (

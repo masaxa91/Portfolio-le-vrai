@@ -9,7 +9,7 @@ import disfa from "../../Assets/Projects/DISFA.png";
 import ninho from "../../Assets/Projects/Site-Ninho.png";
 import fogDoc from "../../Assets/Doc-FOG-SISR.pdf"; 
 
-// Images Projet FOG et Proxmox (Même dossier que Projects.js)
+// Images Projet FOG et Proxmox
 import fogCover from "./fog-cover.png";
 import unicastImg from "./fog-unicast.png";
 import multicastImg from "./fog-multicast.png";
@@ -25,7 +25,7 @@ function Projects() {
         </h1>
 
         <Row className="justify-content-center" style={{ paddingBottom: "50px" }}>
-          {/* PROJET FOG - TEXTE DÉTAILLÉ RÉTABLI */}
+          {/* PROJET FOG */}
           <Col lg={4} md={6} className="project-card d-flex">
             <ProjectCard
               imgPath={fogCover}
@@ -39,12 +39,15 @@ function Projects() {
             />
           </Col>
 
+          {/* PROJET PROXMOX - EXPLICATION MISE À JOUR */}
           <Col lg={4} md={6} className="project-card d-flex">
             <ProjectCard
               imgPath={proxmoxCover}
-              title="Virtualisation & Sécurité (Proxmox/IPFire)"
-              description="Déploiement d'un hyperviseur Proxmox VE sécurisé par un pare-feu IPFire virtualisé pour la gestion et la segmentation des flux réseaux."
-              hasDetails={false} 
+              title="Virtualisation avec Proxmox VE"
+              description="Déploiement d'un hyperviseur Proxmox VE pour la gestion de machines virtuelles."
+              hasDetails={true}
+              imgUnicast={proxmoxCover} 
+              detailedExplication="Au sein de cet hyperviseur, j'ai déployé des instances Windows Server ainsi que des services critiques comme GLPI pour la gestion de parc. J'ai également mis en place une stack Docker gérée via Portainer pour la conteneurisation. Pour optimiser les déploiements, j'utilise Cloud-Init afin d'automatiser la configuration des VMs Linux. Enfin, l'ensemble de l'infrastructure est sécurisé et sauvegardé via un Proxmox Backup Server (PBS), garantissant la haute disponibilité des données."
             />
           </Col>
         </Row>
